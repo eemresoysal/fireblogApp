@@ -1,0 +1,62 @@
+/* Navbar */
+.logoImg {
+    width: 70px;
+}
+
+.navigation {
+    background-color: #003459;
+    color: white;
+    display: flex;
+    /* height: 100px; */
+    /* flex-dirction: row; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.displayName {
+    font-size: 1rem;
+}
+
+.navbarRight,
+.navbarLeft,
+.navbarMid {
+    /* border: 3px solid blue; */
+    height: 80px;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0.7rem; */
+    /* gap: 1rem; */
+}
+
+.linkMenu {
+    display: flex;
+    /* border: 5px solid red; */
+    justify-content: center;
+    justify-items: center;
+    /* width: 560px; */
+}
+
+
+.navbarLink {
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer */
+.footer {
+    background-color: #003459;
+    height: 15%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    color: white;
+    font-size: 2rem;
+}

@@ -1,0 +1,216 @@
+* {
+  /* color: #edf2f4; */
+}
+
+/* Navbar */
+
+
+/* Register-Login */
+
+.registerBox {
+  background-image: url(https://picsum.photos/800/800);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  /* background-color: #b2dbbf; */
+  background-color: #264653;
+
+  /* border-radius: 20px; */
+}
+
+.loginBox {
+  background-color: #b2dbbf;
+
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  /* background-color: #264653; */
+  width: 350px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.inputBox {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  /* border: 1px solid olive; */
+}
+
+.input {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.inputDiv {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 250px;
+
+}
+
+.button {
+  background: #5ca4a9;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 15px;
+  width: ;
+}
+
+.buttonBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  color: #000;
+  margin: 5px;
+
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* NewBlog Page */
+
+.newBlog {
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 3px solid blue; */
+  justify-content: center;
+  align-items: center;
+}
+
+.textArea {
+  margin-top: 2rem;
+  /* width: 320px; */
+  height: 40vh;
+}
+
+.newBlog form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.addImgBox {
+  /* width: 10%; */
+  /* border: 1px solid olive; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  /* justify-content: center; */
+}
+
+.chooseFile {
+  /* border: 3px solid red; */
+  display: flex;
+  /* width: 400px; */
+  flex-direction: column;
+
+  justify-items: center;
+  align-items: center;
+}
+
+/* Details */
+.detailCard {
+  /* border: 2px solid black; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 70vh; */
+  /* border: 1px solid red; */
+
+}
+
+.detailImg img {
+  width: 250px;
+}
+
+.detailImg {
+  /* border: 5px solid blue; */
+  display: flex;
+  justify-content: center;
+}
+
+.detailTitle {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  margin: 1rem;
+}
+
+.detailTitle p {
+  font-size: 2rem;
+}
+
+.detailText {
+  padding: 10px;
+  text-align: justify;
+  width: 100%;
+  display: flex;
+  /* border: 1px solid red; */
+
+  justify-content: center;
+}
+
+.detailButtons {
+  /* border: 1px solid red; */
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+/* BLOGPOST */
+
+.blogPost {
+  display: flex;
+
+}
