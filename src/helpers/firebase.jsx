@@ -84,10 +84,10 @@ export const userObserver = (setCurrentUser) => {
     if (user) {
       const { email, uid } = user;
       setCurrentUser({ email, uid });
-      console.log(user);
+      // console.log(user);
     } else {
       setCurrentUser(false);
-      console.log("user sign out");
+      // console.log("user sign out");
     }
   });
 };
@@ -106,7 +106,7 @@ export const addBlog = async (title, image, blogText) => {
       date: Timestamp.now(),
     });
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
@@ -133,6 +133,6 @@ export const deleteBlog = async (navigate, blogId) => {
     await deleteDoc(deletePost);
     navigate("/dashboard");
   } catch (error) {
-    console.log(error.message);
+    // console.log(error.message);
   }
 };

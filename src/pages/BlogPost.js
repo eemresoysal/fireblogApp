@@ -28,30 +28,36 @@ const BlogPost = () => {
   }, []);
 
   return (
-    <div className=" blogPost d-flex flex-wrap justify-content-center">
+    <div className="blogPost d-flex flex-wrap justify-content-center">
       {blog?.map((item, idx) => (
-        <Card className="m-4 d-flex w-50" key={idx}>
-          <Card.Img variant="top" src={item.image} className="w-100" />
-          <Card.Body>
-            <Card.Title>{item.title}</Card.Title>
-            <Card.Text>{item.blogText}</Card.Text>
-            <Button
-              onClick={() =>
-                navigate("/details/" + item.id, {
-                  state: {
-                    title: item.title,
-                    image: item.image,
-                    blogText: item.blogText,
-                    id: item.id,
-                    authorId: item.authorId,
-                  },
-                })
-              }
-              variant="primary"
-            >
-              Go Details
-            </Button>
-          </Card.Body>
+        <Card className="blogCard m-4" key={idx}>
+          <div className="cardTop d-flex justify-content-center">
+            <Card.Img variant="top" src={item.image} className="cardImg" />
+          </div>
+          <div className="cardBottom">
+            <Card.Body>
+              <Card.Title>{item.title}</Card.Title>
+              <div className="cardText">
+                <Card.Text>{item.blogText}</Card.Text>
+              </div>
+              <Button
+                onClick={() =>
+                  navigate("/details/" + item.id, {
+                    state: {
+                      title: item.title,
+                      image: item.image,
+                      blogText: item.blogText,
+                      id: item.id,
+                      authorId: item.authorId,
+                    },
+                  })
+                }
+                variant="primary"
+              >
+                Go Details
+              </Button>
+            </Card.Body>
+          </div>
         </Card>
       ))}
     </div>

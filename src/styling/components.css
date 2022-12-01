@@ -1,6 +1,6 @@
 /* Navbar */
 .logoImg {
-    width: 70px;
+    width: 150px;
 }
 
 .navigation {
@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    /* height: 100px; */
 }
 
 .displayName {
@@ -22,7 +23,7 @@
 .navbarLeft,
 .navbarMid {
     /* border: 3px solid blue; */
-    height: 80px;
+    height: 100px;
     width: 50vh;
     display: flex;
     justify-content: center;
@@ -48,7 +49,8 @@
 /* Footer */
 .footer {
     background-color: #003459;
-    height: 15%;
+    height: 100px;
+
     color: white;
     display: flex;
     flex-direction: column;

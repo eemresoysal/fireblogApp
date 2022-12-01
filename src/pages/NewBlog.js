@@ -37,6 +37,7 @@ function NewBlog() {
         <div className="d-flex flex-row gap-5 flex-wrap mt-3 justify-content-center">
           <div className=" d-flex flex-column align-items-center">
             <label>Title</label>
+
             <input
               placeholder="Enter Blog Title..."
               className="m-2"
@@ -59,15 +60,15 @@ function NewBlog() {
                 onChange={(e) => setImage(e.target.value)}
               />
             </div>
-            <div className="chooseFile">
+            <div className="chooseFile p-3">
               <input type="file" onChange={handleChange} />
             </div>
           </div>
         </div>
 
-        <div className="d-flex flex-column align-items-center">
+        <div className="d-flex flex-column align-items-center ">
           <textarea
-            className="textArea w-100"
+            className="textArea"
             onChange={(e) => setBlogText(e.target.value)}
             name="blogText"
             id=""

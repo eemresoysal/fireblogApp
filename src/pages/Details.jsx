@@ -39,13 +39,13 @@ const Details = () => {
             >
               Delete
             </Button>
-            <Button
+            {/* <Button
               variant="outlined"
               startIcon={<EditIcon />}
-              onClick={handleDelete}
+              // onClick={handleEdit}
             >
               Edit
-            </Button>
+            </Button> */}
           </div>
         ) : null}
 

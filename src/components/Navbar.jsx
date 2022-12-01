@@ -10,13 +10,13 @@ const Navbar = () => {
   const { currentUser } = useContext(AuthContext);
   // console.log(currentUser.email);
   return (
-    <div className="navigation w-100">
+    <div className="navigation w-100 d-flex flex-wrap">
       <div className="navbarLeft d-flex justify-content-center">
         <Link to="/dashboard">
           <div className="ps-3">
             <img
               className="logoImg"
-              src="https://www.fenerbahce.org/getmedia/bf4b326b-90f0-4a6a-a332-edbfb6603de7/mobile-emblem-info.png.aspx?width=410&height=410&ext=.png"
+              src="https://www.one77fs.co.uk/wp-content/uploads/2018/06/Cool-Example-Company-Logo-33-For-Logo-Inspiration-with-Example-Company-Logo-e1504694443294.png"
               alt=""
             />
           </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbarMid">
-        <h3>Blog Sayfası</h3>
+        <h3>Blog Page</h3>
       </div>
 
       <div
@@ -36,9 +36,6 @@ const Navbar = () => {
             {/* link altındaki çizgi kaldırılacak */}
             {currentUser ? (
               <div className="d-flex flex-column">
-                <Link className="navbarLink" to="/profile">
-                  Profile
-                </Link>
                 <Link to="/newblog" className="navbarLink">
                   New Blog
                 </Link>

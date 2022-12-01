@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 600px;
+  height: calc(100vh - 200px);
   /* background-color: #b2dbbf; */
   background-color: #264653;
 
@@ -98,9 +98,10 @@
 /* NewBlog Page */
 
 .newBlog {
-  height: 80vh;
+  height: calc(100% - 200px);
   display: flex;
   flex-wrap: wrap;
+  /* width: 50%; */
   /* border: 3px solid blue; */
   justify-content: center;
   align-items: center;
@@ -108,14 +109,17 @@
 
 .textArea {
   margin-top: 2rem;
-  /* width: 320px; */
-  height: 40vh;
+  width: 100%;
+  height: 30vh;
 }
 
 .newBlog form {
+  /* border: 3px solid blue; */
+  margin: 1rem 0 1rem 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+
 }
 
 .addImgBox {
@@ -139,7 +143,7 @@
 
 /* Details */
 .detailCard {
-  /* border: 2px solid black; */
+  /* border: 10px solid black; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -155,8 +159,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 70vh; */
-  /* border: 1px solid red; */
+  height: calc(100% - 200px)
+    /* border: 1px solid red; */
 
 }
 
@@ -202,7 +206,8 @@
 /* DASHBOARD */
 
 .dashboard {
-  height: 70%;
+  min-height: 553px;
+  /* height: 1200px; */
   display: flex;
   flex-direction: row;
 
@@ -212,5 +217,63 @@
 
 .blogPost {
   display: flex;
+  /* border: 5px solid red; */
 
+}
+
+.blogCard {
+  /* border: 10px solid red; */
+  /* width: 100%; */
+  /* height: 20%; */
+}
+
+.cardTop {
+  height: 60%;
+}
+
+.cardText {
+  height: 100px;
+  overflow: hidden;
+}
+
+.cardBottom {
+  /* border: 2px solid salmon; */
+  /* height: 70%; */
+}
+
+@media screen and (min-width: 768px) {
+  .blogPost {
+    /* border: 10px solid cadetblue; */
+
+  }
+
+  .blogCard {
+    border: 2px solid seagreen !important;
+    width: 40%;
+    height: 500px !important;
+    overflow: hidden;
+  }
+
+  .cardImg {
+    width: auto !important;
+    /* border: 1px solid olive; */
+    /* height: 90%; */
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1440px) {
+  .blogPost {
+    /* border: 10px solid blue; */
+
+  }
+
+  .blogCard {
+    width: 40%;
+  }
+
+  .cardImg {
+    width: auto !important;
+
+  }
 }
